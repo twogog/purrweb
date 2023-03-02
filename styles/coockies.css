@@ -1,0 +1,29 @@
+.coockies {
+  background-color: #212834;
+  font-size: 14px;
+}
+
+.coockies__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 93px;
+  padding: 0 5px;
+}
+
+.coockies__button {
+  padding: 20px 55px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 0.5px solid #fff;
+  border-radius: 6px;
+}
+
+.coockies__button:hover {
+  cursor: pointer;
+  opacity: 0.75;
+}
+
+.coockies__button:active {
+  opacity: 0.9;
+}
