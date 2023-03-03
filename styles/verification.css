@@ -1,0 +1,36 @@
+.verification {
+  margin-top: -250px;
+  margin-bottom: 100px;
+  background: linear-gradient(180deg, #000 -3%, rgba(0, 0, 0, 0) 57%, #000 84%);
+}
+
+.verification__background {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1980px;
+  margin: 0 auto;
+  z-index: -1;
+}
+
+.verification__container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 125px;
+}
+
+.verification__images {
+  display: flex;
+  gap: 50px;
+  margin-top: -34%;
+}
+
+.verification__description {
+  max-width: 325px;
+  margin-top: -10px;
+}
+
+.verification__title {
+  margin-bottom: 23px;
+}
