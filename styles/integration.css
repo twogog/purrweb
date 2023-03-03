@@ -1,0 +1,35 @@
+.integration__container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.integration__description {
+  position: relative;
+  margin-top: -12%;
+}
+
+.integration__description::after {
+  content: '';
+  width: 426px;
+  height: 438px;
+  position: absolute;
+  top: -100%;
+  left: -40%;
+  background: linear-gradient(12deg, #F101BF 3%, #0066FF 97%);
+  opacity: 0.1;
+  filter: blur(125px);
+  transform: rotate(6deg);
+}
+
+.integration__title {
+  margin-bottom: 23px;
+}
+
+.integration__text {
+  max-width: 395px;
+}
+
+.integration__image {
+  width: 700px;
+}

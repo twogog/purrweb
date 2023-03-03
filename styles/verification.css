@@ -1,6 +1,6 @@
 .verification {
   margin-top: -250px;
-  margin-bottom: 100px;
+  margin-bottom: 200px;
   background: linear-gradient(180deg, #000 -3%, rgba(0, 0, 0, 0) 57%, #000 84%);
 }
 
@@ -15,7 +15,6 @@
 
 .verification__container {
   display: flex;
-  justify-content: center;
   align-items: flex-start;
   gap: 125px;
 }
