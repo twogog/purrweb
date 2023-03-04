@@ -55,8 +55,8 @@
 
 .phones__phone-1 {
   position: absolute;
-  top: -60%;
-  left: -35%;
+  top: -65%;
+  left: -22%;
 }
 
 .phones {
@@ -64,6 +64,6 @@
 }
 
 .phones__phone-2 {
-  margin-left: 35%;
+  margin-left: 40%;
   margin-top: -10%
 }
