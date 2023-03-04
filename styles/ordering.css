@@ -1,0 +1,78 @@
+.ordering__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ordering__description {
+  position: relative;
+  max-width: 421px;
+  margin-right: 5%;
+  align-self: flex-end;
+}
+
+.ordering__description::after {
+  content: '';
+  position: absolute;
+  right: -60%;
+  width: 286px;
+  height: 267px;
+  background: linear-gradient(12deg, #F101BF 3%, #0066FF 97%);
+  opacity: 0.2;
+  filter: blur(125px);
+  transform: rotate(6deg);
+}
+
+.ordering__title {
+  margin-bottom: 23px;
+}
+
+.pseudo-outer {
+  position: relative;
+  align-self: center;
+  margin-left: 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+}
+
+.pseudo-inner {
+  position: relative;
+}
+
+.pseudo-outer::after, .pseudo-outer::before, 
+  .pseudo-inner::after, .pseudo-inner::before {
+  content: 'No more lost or forgotten credit cards';
+  position: absolute;
+  z-index: 1;
+  top: 35%;
+  left: -8%;
+  max-width: 225px;
+  width: 100%;
+  padding: 20px;
+  background: #000;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 18px;
+}
+
+.pseudo-inner::before {
+  content: 'Skip the line';
+  top: 70%;
+  left: 23%;
+  max-width: 130px;
+}
+
+.pseudo-outer::after {
+  top: 20%;
+  left: 55%;
+}
+
+.pseudo-inner::after {
+  content: 'No more split your tab';
+  top: 60%;
+  left: 80%;
+  max-width: 140px;
+}
+
+.ordering__image {
+  max-width: 868px;
+  width: 100%;
+}
