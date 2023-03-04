@@ -1,0 +1,49 @@
+.qrcode__container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 1520px;
+}
+
+.qrcode__gradient {
+  position: relative;
+  background: linear-gradient(180deg, #000 -3%, rgba(0, 0, 0, 0) 57%, #000 100%);
+}
+
+.image__container {
+  display: flex;
+  justify-content: end;
+}
+
+.qrcode__image {
+  position: relative;
+  z-index: -1;
+}
+
+.qrcode__description {
+  max-width: 315px;
+  margin-left: calc(5px + 11vw); 
+  /* 181px */
+  margin-bottom: 58px;
+}
+
+.qrcode__links {
+  display: flex;
+  margin-left: calc(5px + 11vw);
+  gap: 27px;
+}
+
+.qrcode__phones {
+  position: relative;
+}
+
+.phones__phone-1 {
+  position: absolute;
+  top: -60%;
+  left: -35%;
+}
+
+.phones__phone-2 {
+  margin-left: 35%;
+  margin-top: -10%
+}
