@@ -1,0 +1,69 @@
+.qrgenerate {
+  margin-bottom: 190px;
+  background: url('../images/qr-generate/notab.svg')
+  no-repeat;
+  background-position: 50% 30%;
+}
+
+.qrgenerate__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.qrgenerate__container::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -17%;
+  left: 10%;
+  width: 1022px;
+  height: 952px;
+  background: linear-gradient(12deg, #F101BF 3%, #0066FF 97%);
+  opacity: 0.15;
+  filter: blur(156px);
+  border-radius: 50%;
+}
+
+.pseudo-container {
+  position: relative;
+  align-self: center;
+} 
+
+.pseudo-container::before {
+  content: 'Scan QR-code';
+  position: absolute;
+  top: 43%;
+  right: -87%;
+  font-size: 21px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pseudo-container::after {
+  content: '';
+  position: absolute;
+  top: 30%;
+  right: -42%;
+  width: 80px;
+  height: 70px;
+  background: url('../images/multisection/arrow.svg') no-repeat;
+}
+
+.qrgenerate__image {
+  max-width: 332px;
+}
+
+.qrgenerate__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qrgenerate__title {
+  max-width: 381px;
+}
+
+.qrgenerate__text {
+  max-width: 292px;
+}

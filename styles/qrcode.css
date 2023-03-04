@@ -10,27 +10,43 @@
   background: linear-gradient(180deg, #000 -3%, rgba(0, 0, 0, 0) 57%, #000 100%);
 }
 
-.image__container {
-  display: flex;
-  justify-content: end;
-}
-
-.qrcode__image {
-  position: relative;
-  z-index: -1;
-}
-
 .qrcode__description {
   max-width: 315px;
-  margin-left: calc(5px + 11vw); 
+  margin-left: clamp(5px, 11vw, 181px);
   /* 181px */
   margin-bottom: 58px;
 }
 
 .qrcode__links {
   display: flex;
-  margin-left: calc(5px + 11vw);
+  margin-left: clamp(5px, 11vw, 181px);
   gap: 27px;
+}
+
+.image__container {
+  display: flex;
+  justify-content: end;
+}
+
+.image__container {
+  position: relative;
+}
+
+.image__container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 15%;
+  width: 138px;
+  height: 75px;
+  background: url('../images/qr-code/Nightlife.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.qrcode__image {
+  position: relative;
+  z-index: -1;
 }
 
 .qrcode__phones {
@@ -41,6 +57,10 @@
   position: absolute;
   top: -60%;
   left: -35%;
+}
+
+.phones {
+  margin-bottom: 42px;
 }
 
 .phones__phone-2 {
