@@ -20,8 +20,8 @@
   left: 10%;
   width: 1022px;
   height: 952px;
-  background: linear-gradient(12deg, #F101BF 3%, #0066FF 97%);
-  opacity: 0.15;
+  background: var(--pinky-bg);
+  opacity: calc(var(--pinky-opacity) - 0.15);
   filter: blur(156px);
   border-radius: 50%;
 }

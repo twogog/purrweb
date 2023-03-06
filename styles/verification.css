@@ -1,7 +1,7 @@
 .verification {
   margin-top: -250px;
   margin-bottom: 200px;
-  background: linear-gradient(180deg, #000 -3%, rgba(0, 0, 0, 0) 57%, #000 84%);
+  background: linear-gradient(180deg, var(--mainbg-color) -3%, rgba(0, 0, 0, 0) 57%, var(--mainbg-color) 84%);
 }
 
 .verification__background {

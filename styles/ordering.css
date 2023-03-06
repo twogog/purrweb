@@ -16,10 +16,10 @@
   right: -60%;
   width: 286px;
   height: 267px;
-  background: linear-gradient(12deg, #F101BF 3%, #0066FF 97%);
-  opacity: 0.2;
-  filter: blur(125px);
-  transform: rotate(6deg);
+  background: var(--pinky-bg);
+  opacity: calc(var(--pinky-opacity) - 0.1);
+  filter: var(--pinky-filter);
+  transform: var(--pinky-transform);
 }
 
 .pseudo-outer {
@@ -44,7 +44,7 @@
   max-width: 225px;
   width: 100%;
   padding: 20px;
-  background: #000;
+  background: var(--mainbg-color);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 18px;
 }

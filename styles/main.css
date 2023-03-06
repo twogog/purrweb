@@ -1,3 +1,14 @@
+:root {
+  --main-color: #fff;
+  --mainbg-color: #000;
+  /* for pinky pseudo elements */
+  --pinky-bg: linear-gradient(12deg, #F101BF 3%, #0066FF 97%);
+  --pinky-opacity: 0.3;
+  --pinky-filter: blur(125px);
+  --pinky-transform: rotate(6deg);
+  /* for pinky pseudo elements */
+}
+
 @font-face {
   font-family: 'Avenir';
   src: local('Avenir Heavy'),
@@ -22,9 +33,9 @@ font-family: 'Avenir', sans-serif;
 }
 
 body {
-  background-color: #000;
+  background-color: var(--mainbg-color);
   font-family: 'Noto Sans', sans-serif;
-  color: #fff; 
+  color: var(--main-color); 
   font-size: 18px;
   font-weight: 400;
 }
@@ -38,7 +49,7 @@ h2 {
 }
 
 a {
-  color:#fff;
+  color: var(--main-color);
 }
 
 a:hover {

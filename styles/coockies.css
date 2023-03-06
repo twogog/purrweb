@@ -14,8 +14,8 @@
 .coockies__button {
   padding: 20px 55px;
   background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-  border: 0.5px solid #fff;
+  color: var(--main-color);
+  border: 0.5px solid var(--main-color);
   border-radius: 6px;
 }
 

@@ -49,10 +49,10 @@
   left: -100%;
   width: 406px;
   height: 411px;
-  background: linear-gradient(12deg, #F101BF 3%, #0066FF 97%);
-  opacity: 0.3;
-  filter: blur(125px);
-  transform: rotate(6deg);
+  background: var(--pinky-bg);
+  opacity: var(--pinky-opacity);
+  filter: var(--pinky-filter);
+  transform: var(--pinky-transform);
 }
 
 .contacts__logo {

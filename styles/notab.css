@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   height: 1100px;
-  background: linear-gradient(360deg, #000 7%, rgba(0, 0, 0, 0) 52%, #000 93%),
+  background: linear-gradient(360deg, var(--mainbg-color) 7%, rgba(0, 0, 0, 0) 52%, var(--mainbg-color) 93%),
     url('../images/notab/bg.png') no-repeat;
 }
 

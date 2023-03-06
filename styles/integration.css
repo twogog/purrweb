@@ -17,10 +17,10 @@
   position: absolute;
   top: -100%;
   left: -40%;
-  background: linear-gradient(12deg, #F101BF 3%, #0066FF 97%);
-  opacity: 0.1;
-  filter: blur(125px);
-  transform: rotate(6deg);
+  background: var(--pinky-bg);
+  opacity: calc(var(--pinky-opacity) - 0.2);
+  filter: var(--pinky-filter);
+  transform: var(--pinky-transform);
 }
 
 .integration__text {

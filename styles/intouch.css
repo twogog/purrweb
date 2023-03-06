@@ -21,10 +21,10 @@
   left: 15%;
   width: 247px;
   height: 250px;
-  background: linear-gradient(12deg, #F101BF 3%, #0066FF 97%);
-  opacity: 0.3;
-  filter: blur(125px);
-  transform: rotate(6deg);
+  background: var(--pinky-bg);
+  opacity: var(--pinky-opacity);
+  filter: var(--pinky-filter);
+  transform: var(--pinky-transform);
 }
 
 .feedback {
@@ -43,10 +43,10 @@
   right: -50%;
   width: 336px;
   height: 341px;
-  background: linear-gradient(12deg, #F101BF 3%, #0066FF 97%);
-  opacity: 0.3;
-  filter: blur(125px);
-  transform: rotate(6deg);
+  background: var(--pinky-bg);
+  opacity: var(--pinky-opacity);
+  filter: var(--pinky-filter);
+  transform: var(--pinky-transform);
 }
 
 .feedback__grid {
@@ -86,12 +86,12 @@
 .feedback__button {
   padding: 30px 20%;
   margin-top: 60px;
-  background: #000;
-  border: 1px solid #FFF;
+  background: var(--mainbg-color);
+  border: 1px solid var(--main-color);
   border-radius: 10px;
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
-  color: #fff;
+  color: var(--main-color);
   cursor: pointer;
 }
 

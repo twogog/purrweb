@@ -7,7 +7,7 @@
 
 .qrcode__gradient {
   position: relative;
-  background: linear-gradient(180deg, #000 -3%, rgba(0, 0, 0, 0) 57%, #000 100%);
+  background: linear-gradient(180deg, var(--mainbg-color) -3%, rgba(0, 0, 0, 0) 57%, var(--mainbg-color) 100%);
 }
 
 .qrcode__description {
