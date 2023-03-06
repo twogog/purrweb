@@ -23,10 +23,6 @@
   transform: rotate(6deg);
 }
 
-.integration__title {
-  margin-bottom: 23px;
-}
-
 .integration__text {
   max-width: 395px;
 }

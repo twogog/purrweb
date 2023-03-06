@@ -61,6 +61,10 @@ a:active {
   padding: 0 5px;
 }
 
+.description__title {
+  margin-bottom: 23px;
+}
+
 .fade {
   display: none;
 }

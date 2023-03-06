@@ -22,10 +22,6 @@
   transform: rotate(6deg);
 }
 
-.ordering__title {
-  margin-bottom: 23px;
-}
-
 .pseudo-outer {
   position: relative;
   align-self: center;

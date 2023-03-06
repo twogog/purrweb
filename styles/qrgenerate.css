@@ -62,6 +62,7 @@
 
 .qrgenerate__title {
   max-width: 381px;
+  margin-bottom: 0;
 }
 
 .qrgenerate__text {

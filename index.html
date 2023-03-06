@@ -64,9 +64,9 @@
 
         <div class="vision mission__vision">
           <img src="./images/multisection/phone.png" alt="phone" class="vision__image">
-          <div class="vision__description">
-            <h2 class="vision__title">Our mission and vision</h2>
-            <p class="vision__text">While technology is our sweet spot, we’ve developed our vision alongside
+          <div class="description vision__description">
+            <h2 class=" description__title vision__title">Our mission and vision</h2>
+            <p class="description__text vision__text">While technology is our sweet spot, we’ve developed our vision alongside
               our customers to ensure your everyday problems are solved through simplistic tools. And as your business grows, we’ll grow right alongside with you.</p>
           </div>
         </div>
@@ -80,9 +80,9 @@
           <img src="./images/verification/phone-1.png" alt="phone-1" class="verification__image">
           <img src="./images/verification/phone-2.png" alt="phone-2" class="verification__image">  
         </div>
-        <div class="verification__description">
-          <h2 class="verification__title">ID Scanner</h2>
-          <p class="verification__text">Scan, verify, and collect data on each person that walks through your door
+        <div class="description verification__description">
+          <h2 class="description__title verification__title">ID Scanner</h2>
+          <p class="description__text verification__text">Scan, verify, and collect data on each person that walks through your door
             to humanize your data. You also get
             a&nbsp;digital 86 list as well as a citywide ban list to keep your venue safe.</p>
         </div>
@@ -91,9 +91,9 @@
 
     <section class="integration">
       <div class="container integration__container">
-        <div class="integration__description">
-          <h2 class="integration__title">BI Tool Integration</h2>
-          <p class="integration__text">We use Business Intelligence Tool that allows you to be updated what is happening in your business just by one click. Track revenue
+        <div class="description integration__description">
+          <h2 class="description__title integration__title">BI Tool Integration</h2>
+          <p class="description__text integration__text">We use Business Intelligence Tool that allows you to be updated what is happening in your business just by one click. Track revenue
             and profit by one click.</p>
         </div>
         <img src="./images/integration/graphics.png" alt="graphics" class="integration__image">
@@ -106,9 +106,9 @@
           <div class="qrcode__gradient">
             <img src="./images/qr-code/bg-left.png" alt="dj" class="qrcode__image">
           </div>
-          <div class="qrcode__description">
-            <h2 class="qrcode__title">QR code</h2>
-            <p class="qrcode__text">No more conflict situations due to wrong order. The guest selects the positions, and after that an individual QR code of his order is generated</p>
+          <div class="description qrcode__description">
+            <h2 class="description__title qrcode__title">QR code</h2>
+            <p class="description__text qrcode__text">No more conflict situations due to wrong order. The guest selects the positions, and after that an individual QR code of his order is generated</p>
           </div>
           <div class="qrcode__links">
             <a href="#!" class="qrcode__link"><img src="./images/multisection/appstore-link.svg" alt="appstore"></a>
@@ -132,9 +132,9 @@
         <div class="pseudo-container">
           <img src="./images/qr-generate/phone.png" alt="phone" class="qrgenerate__image">
         </div>
-        <div class="qrgenerate__description">
-          <h2 class="qrgenerate__title">Generate your QR-code</h2>
-          <p class="qrgenerate__text">The guest QR code is scanned
+        <div class="description qrgenerate__description">
+          <h2 class="description__title qrgenerate__title">Generate your QR-code</h2>
+          <p class="description__text qrgenerate__text">The guest QR code is scanned
             by&nbsp;the staff and automatically sent</p>
         </div>
       </div>
@@ -142,10 +142,10 @@
 
     <section class="ordering">
       <div class="container ordering__container">
-        <div class="ordering__description">
-          <h2 class="ordering__title">Easier ordering.
+        <div class="description ordering__description">
+          <h2 class="description__title ordering__title">Easier ordering.
             Happier guests.</h2>
-          <p class="ordering__text">NoTab makes it simple for patrons to easily</p>
+          <p class="description__text ordering__text">NoTab makes it simple for patrons to easily</p>
         </div>
         <div class="pseudo-outer">
           <div class="pseudo-inner">
@@ -155,16 +155,43 @@
       </div>
     </section>
 
-    <section class="notab">
+    <div class="notab">
       <div class="container notab__container">
         <div class="notab__image">
           <img src="./images/notab/phone.png" alt="tablet">
         </div>
       </div>
+    </div>
+
+    <section class="intouch">
+      <div class="description intouch__description">
+        <h2 class="description__title intouch__title">Get In Touch</h2>
+        <p class="description__text intouch__text">Have questions about Noble or just want to say hello?
+          Drop&nbsp;us&nbsp;a&nbsp;line&nbsp;and a member of our team will getback to you shortly.</p>
+      </div>
+      
+      <form class="feedback">
+        <div class="feedback__grid">
+          <input type="text" id="name" name="name" placeholder="Name" aria-label="Name">
+          <input type="text" id="venue" name="venue" placeholder="Venue Name" aria-label="Venue Name">
+          <div class="double">
+            <input type="text" id="city" name="city" placeholder="Venue City" aria-label="Venue City">
+            <input type="text" id="state" name="state" placeholder="State City" aria-label="State City">
+          </div>
+          <input type="email" id="email" name="email" placeholder="Email" aria-label="Email">
+          <input type="text" id="subject" name="subject"
+            placeholder="Subject"
+            aria-label="Subject"
+          >
+          <textarea id="message" name="message" placeholder="Message" aria-label="Message"></textarea>
+        </div>
+        <button class="feedback__button" type="submit">Send</button>
+      </form>
+      
     </section>
 
   </main>
   </div>
-  <script src="./index.js"></script>
+  <script type="module" src="./js/main.js"></script>
 </body>
 </html>
