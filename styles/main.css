@@ -2,7 +2,7 @@
   font-family: 'Avenir';
   src: local('Avenir Heavy'),
     local('Avenir-Heavy'),
-    url('./fonts/Avenir-Heavy.ttf') format('truetype');
+    url('../fonts/Avenir-Heavy.ttf') format('truetype');
   font-style: normal;
   font-weight: 900;
 }
@@ -63,6 +63,20 @@ a:active {
 
 .description__title {
   margin-bottom: 23px;
+}
+
+.download {
+  display: flex;
+}
+
+.download__text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 35px;
+}
+
+.download__links {
+  display: flex;
+  align-items: center;
 }
 
 .fade {

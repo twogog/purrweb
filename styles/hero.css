@@ -70,18 +70,10 @@
 }
 
 .hero__download {
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.download__text {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 35px; 
-}
-
-.download__links {
-  display: flex;
-  align-items: center;
+.hero .download__links {
   gap: 28px;
 }

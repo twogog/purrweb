@@ -73,13 +73,13 @@
   resize: none;
 }
 
-.double {
+.feedback__double {
   display: flex;
   flex-direction: column;
   gap: 23px;
 }
 
-.double * {
+.feedback__double * {
   flex-grow: 1;
 }
 

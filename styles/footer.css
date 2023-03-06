@@ -1,0 +1,66 @@
+.footer {
+  overflow-y: hidden;
+}
+
+.footer__container {
+  margin-bottom: 85px;
+}
+
+.footer__download {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+.footer .download__text {
+  margin-bottom: 33px;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.footer .download__links {
+  gap: 59px;
+}
+
+.footer .download__link img {
+  height: 81px;
+}
+
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Avenir', sans-serif;
+}
+
+.contacts__support {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contacts__support::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -60%;
+  left: -100%;
+  width: 406px;
+  height: 411px;
+  background: linear-gradient(12deg, #F101BF 3%, #0066FF 97%);
+  opacity: 0.3;
+  filter: blur(125px);
+  transform: rotate(6deg);
+}
+
+.contacts__logo {
+  max-height: 17px;
+}
+
+.contacts__policy {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
