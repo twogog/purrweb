@@ -1,5 +1,5 @@
 .mission__container {
-  margin-top: 61px;
+  margin-top: 15%;
 }
 
 .mission__partners {
@@ -52,6 +52,7 @@
 }
 
 .vision__image {
+  max-width: 498px;
   transform-origin: top right;
   transform: rotate(90deg);
   translate: 0 51%;

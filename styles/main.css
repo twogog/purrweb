@@ -40,6 +40,10 @@ body {
   font-weight: 400;
 }
 
+img {
+  width: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
 }
@@ -69,7 +73,7 @@ a:active {
 .container {
   max-width: 1240px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
 .description__title {
@@ -92,4 +96,10 @@ a:active {
 
 .fade {
   display: none;
+}
+
+@media (max-width: 522px) {
+  .container {
+    padding: 0 15px;
+  }
 }

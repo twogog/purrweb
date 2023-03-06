@@ -6,16 +6,12 @@
 
 .verification__background {
   position: relative;
-  display: block;
-  width: 100%;
-  max-width: 1520px;
-  margin: 0 auto;
   z-index: -1;
 }
 
 .verification__container {
   display: flex;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   gap: 125px;
 }
 
@@ -23,6 +19,10 @@
   display: flex;
   gap: 50px;
   margin-top: -34%;
+}
+
+.verification__images * {
+  max-width: 333px;
 }
 
 .verification__description {

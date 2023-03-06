@@ -24,12 +24,9 @@
 }
 
 .image__container {
+  position: relative;
   display: flex;
   justify-content: end;
-}
-
-.image__container {
-  position: relative;
 }
 
 .image__container::after {
@@ -51,6 +48,11 @@
 
 .qrcode__phones {
   position: relative;
+  margin-bottom: 42px;
+}
+
+.phones * {
+  max-width: 333px;
 }
 
 .phones__phone-1 {
@@ -59,11 +61,13 @@
   left: -22%;
 }
 
-.phones {
-  margin-bottom: 42px;
-}
-
 .phones__phone-2 {
   margin-left: 40%;
   margin-top: -10%
+}
+
+@media (max-width: 1200px) {
+  .phones * {
+    max-width: 20vw;
+  }
 }
