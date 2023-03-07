@@ -98,8 +98,24 @@ a:active {
   display: none;
 }
 
+@media (max-width: 900px) {
+ .description__title {
+   font-size: 40px;
+ }
+}
+
 @media (max-width: 522px) {
+
+  body {
+    font-size: 16px;
+  }
+
   .container {
     padding: 0 15px;
   }
+
+  .description__title {
+    font-size: 24px;
+  }
+
 }
