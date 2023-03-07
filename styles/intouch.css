@@ -75,7 +75,6 @@
 
 .feedback__double {
   display: flex;
-  flex-direction: column;
   gap: 23px;
 }
 
