@@ -66,8 +66,144 @@
   margin-top: -10%
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .phones * {
-    max-width: 20vw;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .phones * {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 950px) {
+  .qrcode {
+    margin-bottom: 100px;
+  }
+
+  .qrcode__container {
+    flex-direction: column;
+  }
+
+  .qrcode__description,
+  .qrcode__links {
+    margin-left: 15px;
+  }
+
+  .qrcode__description {
+    max-width: 610px;
+    margin-top: -13%;
+    position: relative;
+  }
+  
+  .image__container img {
+    max-width: 500px;
+  }
+
+  .qrcode__phones {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .qrcode__phones * {
+    max-width: 370px;
+  }
+
+  .phones__phone-1 {
+    position: static;
+    margin-top: -40%;
+    margin-bottom: 40%;
+    margin-left: 5%;
+  }
+
+  .phones__phone-2 {
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  .qrcode__phones * {
+    max-width: 330px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .qrcode__phones * {
+    max-width: 280px;
+  }
+
+  .phones__phone-1 {
+    margin-top: -30%;
+    margin-bottom: 30%;
+  }
+}
+
+@media (max-width: 670px) {
+  .image__container::after {
+    top: 30%;
+    left: 15%;
+  }
+}
+
+@media (max-width: 622px) {
+  .qrcode__phones * {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 522px) {
+  .qrcode__gradient {
+    background: linear-gradient(180deg, var(--mainbg-color) -3%, rgba(0, 0, 0, 0) 57%, var(--mainbg-color) 90%);
+  }
+
+  .qrcode__description {
+    max-width: 82vw;
+    margin-top: -20%;
+    margin-bottom: 50px;
+  }
+
+  .qrcode__links {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .qrcode__links * {
+    width: 185px;
+  }
+  
+  .image__container {
+    margin-right: -40px;
+  }
+
+  .image__container::after {
+    top: 40%;
+    left: 10%;
+  }
+  
+  .image__container img {
+    max-width: 330px;
+  }
+  .image__container::after {
+    width: 105px;
+  }
+
+  .qrcode__phones {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .qrcode__phones * {
+    max-width: 281px;
+  }
+
+  .phones__phone-1 {
+    margin-top:-25%;
+    margin-bottom: 0;
   }
 }
