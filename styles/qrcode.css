@@ -156,6 +156,10 @@
 }
 
 @media (max-width: 522px) {
+  .qrcode {
+    margin-bottom: 130px;
+  }
+  
   .qrcode__gradient {
     background: linear-gradient(180deg, var(--mainbg-color) -3%, rgba(0, 0, 0, 0) 57%, var(--mainbg-color) 90%);
   }
