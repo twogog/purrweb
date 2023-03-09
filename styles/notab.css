@@ -10,3 +10,9 @@
 .notab__container {
   margin-top: 10%;
 }
+
+@media (max-width: 768px) {
+  .notab {
+    display: none;
+  } 
+}

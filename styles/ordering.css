@@ -104,6 +104,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .ordering {
+    margin-bottom: 150px;
+  }
+}
+
 @media (max-width: 700px) {
   .pseudo-outer {
     max-width: 100%;
@@ -125,14 +131,8 @@
     top: 5%;
   }
 
-  .pseudo-inner::before {
-    content: 'Skip the line';
-    
-  }
-
   .pseudo-inner::after {
     content: 'No more split\A your tab';
-
   }
 }
 
