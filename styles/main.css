@@ -94,10 +94,6 @@ a:active {
   align-items: center;
 }
 
-.fade {
-  display: none;
-}
-
 @media (max-width: 900px) {
  .description__title {
    font-size: 40px;

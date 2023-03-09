@@ -1,6 +1,5 @@
 .coockies {
   background-color: #212834;
-  font-size: 14px;
 }
 
 .coockies__container {
@@ -8,13 +7,18 @@
   justify-content: space-between;
   align-items: center;
   min-height: 93px;
-  padding: 0 5px;
+  padding: 0 15px;
+}
+
+.coockies__text {
+  padding-right: 5px;
 }
 
 .coockies__button {
   padding: 20px 55px;
   background: rgba(255, 255, 255, 0.1);
   color: var(--main-color);
+  font-size: 14px;
   border: 0.5px solid var(--main-color);
   border-radius: 6px;
 }
@@ -26,4 +30,15 @@
 
 .coockies__button:active {
   opacity: 0.9;
+}
+
+@media (max-width: 522px) {
+  .coockies__text {
+    max-width: 200px;
+    font-size: 12px;
+  }
+
+  .coockies__button {
+    padding: 17px 35px;
+  }
 }
