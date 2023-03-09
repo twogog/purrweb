@@ -50,6 +50,8 @@
 }
 
 .feedback__grid {
+  position: relative;
+  z-index: 10;
   display: grid;
   grid-template-columns: minmax(250px, 818px);
   gap: 23px;
@@ -104,4 +106,49 @@
 
 .invalid {
   border: 2px solid #FF0000 !important;
+}
+
+@media (max-width: 768px) {
+  .feedback__grid input {
+    max-height: 70px;
+  }
+
+  .feedback__grid textarea {
+    max-height: 160px;
+  }
+}
+
+@media (max-width: 560px) {
+  .feedback__double {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 522px) {
+  .intouch__description {
+    max-width: 85vw;
+    margin-bottom: 50px;
+  }
+  
+  .feedback {
+    margin-bottom: 74px;
+  }
+  
+  .feedback__grid * {
+    font-size: 16px !important;
+  }
+
+  .feedback__grid input {
+    max-height: 57px;
+  }
+
+  .feedback__grid textarea {
+    max-height: 140px;
+  }
+
+  .feedback__button {
+    width: 100%;
+    margin-top: 40px;
+    padding: 24px 0;
+  }
 }
