@@ -74,10 +74,6 @@
   gap: 25px;
 }
 
-.coockies--fade {
-  display: none;
-}
-
 @media (max-width: 672px) {
   .footer .download__links {
     flex-direction: column;
