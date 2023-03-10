@@ -80,6 +80,35 @@
   filter: blur(50px);
 }
 
+.vision__image--spin {
+  animation: spin 6s linear;
+}
+
+@keyframes spin {
+  25% {
+    max-width: 300px;
+    transform: rotate(0);
+    translate: 80% -20%;
+  }
+
+  75% {
+    max-width: 300px;
+    transform: rotate(0);
+    translate: 80% -20%;
+  }
+}
+
+.vision__description--fade {
+  animation: fade 5s linear;
+}
+
+@keyframes fade {
+50% {
+    opacity: 0;
+    transform: translate(170%);
+  }
+}
+
 @media (max-width: 1060px) {
   .vision__image {
     max-width: 400px;
