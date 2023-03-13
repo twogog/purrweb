@@ -1,6 +1,7 @@
 // не стал использовать watcher, не mvc
 import caruselSliding from './carusel.js';
 import notCaruselSliding from './notcarusel.js';
+import { notCaruselButtons } from './buttons.js';
 
 const state = {
   active: 0,
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   sliderEl.items.forEach((item, id) => {
     const active = state.active === id ? 'btn--active' : '';
     sliderEl.dots.innerHTML += `
-      <li class="slider__dot"><button class="${active}">${id + 1}</button></li>
+      <li class="slider__dot"><button class="btn ${active}">${id + 1}</button></li>
     `;
   });
 
@@ -32,7 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 sliderEl.slider.addEventListener('click', ({ target }) => {
   const { className } = target;
-  if (sliderEl.items.length > 1 && state.status === 'done') {
+  const readyToSlide = sliderEl.items.length > 1 && state.status === 'done';
+  if (readyToSlide) {
 
     if (className === 'slider__prev') {
       switch (state.active !== 0) {
@@ -51,4 +53,14 @@ sliderEl.slider.addEventListener('click', ({ target }) => {
     }
 
   }
+
+  if (className.trim().endsWith('btn') && readyToSlide) {
+    const newActive = target.textContent - 1;
+    const prevActive = state.active;
+    state.active = newActive;
+    newActive > prevActive
+      ? notCaruselButtons('right', 10, sliderEl, state, newActive - prevActive)
+      : notCaruselButtons('left', 10, sliderEl, state, prevActive - newActive);
+  }
+
 });

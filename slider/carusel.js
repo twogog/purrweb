@@ -2,11 +2,16 @@ import { activeButton } from './buttons.js';
 
 export default (direction, time, sliderEl, state) => {
   state.status = 'pending';
-  direction === 'left' ? state.translationGap = 60 : '';
+  direction === 'left'
+    ? state.translationGap = 60 
+    : state.translationGap = 60 * (state.active - 1); // don't ask why
+
   direction === 'left'
     ? state.active = sliderEl.items.length - 1
     : state.active = 0;
+    
   activeButton(sliderEl, state);
+
   sliderEl.dots.querySelectorAll('button').forEach((item, id) => {
     state.active === id
     ? item.classList.add('btn--active')

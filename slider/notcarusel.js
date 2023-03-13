@@ -14,10 +14,9 @@ export default (direction, time, sliderEl, state) => {
         return;
       }
       sliderEl.items.forEach((item) => {
-        item.style.transform = `translate(-${
-          direction === 'right' 
-          ? state.translationGap + state.transformation 
-          : state.translationGap - state.transformation}vw)`;
+        item.style.transform = direction === 'right' 
+          ? `translate(-${state.translationGap + state.transformation}vw)`
+          : `translate(-${state.translationGap - state.transformation}vw)`;
       });
     }, time);
 };
