@@ -90,3 +90,49 @@ body {
 .slider__next::before {
   content: '>';
 }
+
+.slider__dots {
+  position: absolute;
+  bottom: -35px;
+  display: block;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+
+.slider__dot {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slider__dot button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+.slider__dot .btn--active {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.slider__dot button:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.slider__dot button:active {
+  background: rgba(255, 255, 255, 0.5);
+}
